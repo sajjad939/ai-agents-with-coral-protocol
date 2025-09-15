@@ -1,0 +1,35 @@
+# Dockerfile.backend
+# This Dockerfile sets up the environment for running the QAaaS backend agents
+
+FROM node:18-alpine
+
+# Install git and other dependencies
+RUN apk add --no-cache git openssh python3 py3-pip make g++ curl
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy application code
+COPY . .
+
+# Create directory for blockchain logs
+RUN mkdir -p blockchain_logs
+
+# Create directory for cloned repositories
+RUN mkdir -p repos
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=3000
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["node", "index.js"]

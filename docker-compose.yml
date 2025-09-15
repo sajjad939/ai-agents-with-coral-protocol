@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  qaas-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: qaas-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./repos:/app/repos
+      - ./blockchain_logs:/app/blockchain_logs
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      # Add your API keys and secrets as environment variables
+      # - GITHUB_TOKEN=your_github_token
+      # - GITLAB_TOKEN=your_gitlab_token
+      # - NFT_STORAGE_API_KEY=your_nft_storage_api_key
+      # - SOLANA_PRIVATE_KEY=your_solana_private_key
+      # - SOLANA_PROGRAM_ID=your_solana_program_id
+    networks:
+      - qaas-network
+
+  # Optional: Add a database service if needed
+  # mongodb:
+  #   image: mongo:latest
+  #   container_name: qaas-mongodb
+  #   restart: unless-stopped
+  #   volumes:
+  #     - mongodb-data:/data/db
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=qaas
+  #     - MONGO_INITDB_ROOT_PASSWORD=your_secure_password
+  #   networks:
+  #     - qaas-network
+
+  # Optional: Add a Redis service for caching if needed
+  # redis:
+  #   image: redis:alpine
+  #   container_name: qaas-redis
+  #   restart: unless-stopped
+  #   volumes:
+  #     - redis-data:/data
+  #   networks:
+  #     - qaas-network
+
+networks:
+  qaas-network:
+    driver: bridge
+
+# Uncomment if using MongoDB or Redis
+# volumes:
+#   mongodb-data:
+#   redis-data:
