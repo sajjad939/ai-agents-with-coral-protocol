@@ -1,0 +1,69 @@
+{
+  "repoId": "repo-1757875530258",
+  "repoUrl": "https://github.com/sajjad939/ai-agents-with-coral-protocol.git",
+  "branch": "main",
+  "timestamp": "2025-09-14T18:45:33.057Z",
+  "unitTests": {
+    "success": true,
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "duration": 0
+    },
+    "details": [
+      {
+        "name": "repository-empty-check",
+        "suite": "system",
+        "status": "skipped",
+        "duration": 0,
+        "failureMessages": [
+          "Repository is empty, no tests to run"
+        ]
+      }
+    ],
+    "rawOutput": "\"Repository is empty, no tests to run\"\r\n",
+    "rawError": "",
+    "timestamp": "2025-09-14T18:45:33.155Z",
+    "blockchain": {
+      "success": true,
+      "type": "unit",
+      "repoId": "repo-1757875530258",
+      "timestamp": "2025-09-14T18:45:34.395Z",
+      "localBackup": "D:\\Scholarship\\Hackathons\\Coral Protocol\\backend\\blockchain_logs\\repo-1757875530258-unit-2025-09-14T18-45-34-391Z.json"
+    }
+  },
+  "integrationTests": {
+    "success": true,
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "duration": 0
+    },
+    "details": [
+      {
+        "name": "repository-empty-check",
+        "suite": "system",
+        "status": "skipped",
+        "duration": 0,
+        "failureMessages": [
+          "Repository is empty, no integration tests to run"
+        ]
+      }
+    ],
+    "rawOutput": "Repository is empty, no integration tests to run",
+    "rawError": "",
+    "timestamp": "2025-09-14T18:45:34.410Z",
+    "logFile": "D:\\Scholarship\\Hackathons\\Coral Protocol\\backend\\logs\\integration-undefined-2025-09-14T18-45-34-400Z.log",
+    "blockchain": {
+      "success": true,
+      "type": "integration",
+      "repoId": "repo-1757875530258",
+      "timestamp": "2025-09-14T18:45:34.665Z",
+      "localBackup": "D:\\Scholarship\\Hackathons\\Coral Protocol\\backend\\blockchain_logs\\repo-1757875530258-integration-2025-09-14T18-45-34-661Z.json"
+    }
+  }
+}

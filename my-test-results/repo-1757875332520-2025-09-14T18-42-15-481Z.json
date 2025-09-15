@@ -1,0 +1,55 @@
+{
+  "repoId": "repo-1757875332520",
+  "repoUrl": "https://github.com/sajjad939/ai-agents-with-coral-protocol.git",
+  "branch": "main",
+  "timestamp": "2025-09-14T18:42:15.418Z",
+  "unitTests": {
+    "success": true,
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "duration": 0
+    },
+    "details": [
+      {
+        "name": "repository-empty-check",
+        "suite": "system",
+        "status": "skipped",
+        "duration": 0,
+        "failureMessages": [
+          "Repository is empty, no tests to run"
+        ]
+      }
+    ],
+    "rawOutput": "\"Repository is empty, no tests to run\"\r\n",
+    "rawError": "",
+    "timestamp": "2025-09-14T18:42:15.472Z"
+  },
+  "integrationTests": {
+    "success": true,
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "duration": 0
+    },
+    "details": [
+      {
+        "name": "repository-empty-check",
+        "suite": "system",
+        "status": "skipped",
+        "duration": 0,
+        "failureMessages": [
+          "Repository is empty, no integration tests to run"
+        ]
+      }
+    ],
+    "rawOutput": "Repository is empty, no integration tests to run",
+    "rawError": "",
+    "timestamp": "2025-09-14T18:42:15.480Z",
+    "logFile": "D:\\Scholarship\\Hackathons\\Coral Protocol\\backend\\logs\\integration-undefined-2025-09-14T18-42-15-475Z.log"
+  }
+}

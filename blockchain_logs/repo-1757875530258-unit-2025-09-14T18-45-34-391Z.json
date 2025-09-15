@@ -1,0 +1,31 @@
+{
+  "repoId": "repo-1757875530258",
+  "type": "unit",
+  "timestamp": "2025-09-14T18:45:34.391Z",
+  "results": {
+    "success": true,
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "duration": 0
+    },
+    "details": [
+      {
+        "name": "repository-empty-check",
+        "suite": "system",
+        "status": "skipped",
+        "duration": 0,
+        "failureMessages": [
+          "Repository is empty, no tests to run"
+        ]
+      }
+    ],
+    "rawOutput": "\"Repository is empty, no tests to run\"\r\n",
+    "rawError": "",
+    "timestamp": "2025-09-14T18:45:33.155Z"
+  },
+  "storage": null,
+  "blockchain": null
+}
